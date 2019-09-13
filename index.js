@@ -16,7 +16,6 @@ app.use(express.urlencoded({extended: false}));
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
-
 app.use('/api/users', users);
 app.use('/api/chirps', chirps);
 app.use('/api/comments', comments);
